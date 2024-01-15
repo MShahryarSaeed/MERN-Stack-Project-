@@ -1,6 +1,8 @@
 import React from 'react';
 import './UserItem.css';
 import { Link } from 'react-router-dom';
+// Components
+import Avatar from '../../shared/components/UIElements/Avatar';
 
 const UserItem = (props) => {
   return (
@@ -12,7 +14,7 @@ const UserItem = (props) => {
         <Link to={`/${props.id}`}>
 
           <div className='user-item_image'>
-            <img src={props.image} alt={props.name} />
+            <Avatar image={props.image} alt={props.name}/>
           </div>
 
           <div className="user-item__info">
@@ -25,7 +27,7 @@ const UserItem = (props) => {
           </div>
 
         </Link>
-        
+
       </div>
 
     </li>
