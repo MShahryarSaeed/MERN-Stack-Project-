@@ -5,6 +5,7 @@ import './MainNavigation.css';
 import NavLinks from './NavLinks';
 import MainHeader from './MainHeader';
 import SideDrawer from './SideDrawer';
+import Backdrop from '../UIElements/Backdrop';
 
 const MainNavigation = () => {
 
@@ -21,7 +22,7 @@ const MainNavigation = () => {
 
   return (
     <>
-      {drawerIsOpen && 'Hello Drawer'}
+      {drawerIsOpen && <Backdrop onClick={closeDrawerHandler} />}
 
       <SideDrawer show={drawerIsOpen} onClick={closeDrawerHandler}>
         <nav className='main-navigation__drawer-nav'>
