@@ -31,7 +31,7 @@ const USERS = [
     image: "https://xsgames.co/randomusers/assets/avatars/male/46.jpg",
   },
 ];
-// const USERS=[];
+// const USER=[];
 
 const Users = () => {
 
