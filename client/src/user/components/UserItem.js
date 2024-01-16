@@ -12,7 +12,8 @@ const UserItem = (props) => {
 
       
         <Card className="user-item__contents">
-        <Link to={`/${props.id}`}>
+          
+        <Link to={`/${props.id}/places`}>
 
           <div className='user-item_image'>
             <Avatar image={props.image} alt={props.name}/>

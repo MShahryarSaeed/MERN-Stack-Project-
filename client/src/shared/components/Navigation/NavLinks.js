@@ -1,8 +1,11 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink} from 'react-router-dom';
 import './NavLinks.css';
 
 const NavLinks = () => {
+
+  // const{userId}=useParams();
+
   return (
     <ul className='nav-links'>
 
@@ -10,7 +13,7 @@ const NavLinks = () => {
         <NavLink to='/'>All USERS</NavLink>
       </li>
       <li>
-        <NavLink to='/u1/places'>MY PLACES</NavLink>
+        <NavLink to={`/u1/places`}>MY PLACES</NavLink>
       </li>
       <li>
         <NavLink to='/places/new'>ADD PLACE</NavLink>
